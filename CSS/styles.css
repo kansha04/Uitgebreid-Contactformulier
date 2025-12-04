@@ -36,11 +36,15 @@ select {
     margin-bottom: 5px;
     border: 1px solid #ccc;
 }
-
+/* Submit en opnieuw btn */
 input[type="submit"], [type="button"] {
     background-color: #373A36;
     color: RGB(208 208 206);
     border: none;
     cursor: pointer;
     font-weight: bold;
+}
+
+footer {
+  font-family: Arial;
 }

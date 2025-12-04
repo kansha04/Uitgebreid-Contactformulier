@@ -39,9 +39,9 @@
             id="geboortedatum"
             required
           /><br />
-          <label for="leeftijd">Leeftijd: </label><br>
-            <!-- Range slider for age selection that updates the output value in real-time -->
-            <input
+          <label for="leeftijd">Leeftijd: </label><br />
+          <!-- Range slider for age selection that updates the output value in real-time -->
+          <input
             type="range"
             name="leeftijd"
             id="leeftijd"
@@ -49,8 +49,9 @@
             max="100"
             step="1"
             value="0"
-            oninput="document.querySelector('.leeftijd').textContent = this.value" />
-          <output class="leeftijd" for="leeftijd">0</output><br>
+            oninput="document.querySelector('.leeftijd').textContent = this.value"
+          />
+          <output class="leeftijd" for="leeftijd">0</output><br />
           <label for="telefoon">Telefoonnummer</label>
           <input
             type="tel"
@@ -125,7 +126,7 @@
         <p>DevOps T-Shirt</p>
         <!-- Kleur selector -->
         <label for="t-shirt_kleur">Kleur</label>
-        <input type="color" name="t-shirt" id="t-shirt_kleur">
+        <input type="color" name="t-shirt" id="t-shirt_kleur" />
         <label for="t-shirt_maat">Maat: </label>
         <select name="t-shirt" id="t-shirt_maat">
           <option value="XS">XS</option>
@@ -141,10 +142,16 @@
       <fieldset>
         <legend>Extra Informatie</legend>
         <form action="extrainfo" method="post">
-          <label for="cv_upload">Upload je CV (niet verplicht)</label><br>
-          <input type="file" name="cv" id="cv_upload"><br>
-          <label for="vragen">Extra Vragen:</label><br>
-          <textarea name="vragen" id="vragen" placeholder="Moet ik mijn laptop brengen?" cols="31" rows="5"></textarea>
+          <label for="cv_upload">Upload je CV (niet verplicht)</label><br />
+          <input type="file" name="cv" id="cv_upload" /><br />
+          <label for="vragen">Extra Vragen:</label><br />
+          <textarea
+            name="vragen"
+            id="vragen"
+            placeholder="Moet ik mijn laptop brengen?"
+            cols="31"
+            rows="5"
+          ></textarea>
         </form>
       </fieldset>
     </section>
@@ -154,21 +161,39 @@
         <legend>Marketing en Bevestiging</legend>
         <form action="" method="post">
           <label for="nieuwsbrief">Updates voor toekomstige events</label>
-          <input type="checkbox" name="nieuwsbrief" id="nieuwsbrief"><br>
+          <input type="checkbox" name="nieuwsbrief" id="nieuwsbrief" /><br />
           <label for="algemene_voorwaarden">Algemene voorwaarden *</label>
-          <input type="checkbox" name="algemene_voorwaarden" id="algemene_voorwaarden" required> <br>
-          <label for="privacy_verklaring">Ik ga akkord met de privacy verklaring *</label>
-          <input type="checkbox" name="privacy_verklaring" id="privacy_verklaring">
+          <input
+            type="checkbox"
+            name="algemene_voorwaarden"
+            id="algemene_voorwaarden"
+            required
+          />
+          <br />
+          <label for="privacy_verklaring"
+            >Ik ga akkord met de privacy verklaring *</label
+          >
+          <input
+            type="checkbox"
+            name="privacy_verklaring"
+            id="privacy_verklaring"
+          />
         </form>
       </fieldset>
     </section>
 
     <section>
       <form action="submit" method="post">
-        <input type="submit" value="Registreren">
+        <input type="submit" value="Registreren" required/>
         <label for=""></label>
-        <input type="button" value="Opnieuw registreren">
+        <input type="button" value="Opnieuw registreren" />
       </form>
     </section>
+
+    <footer>
+      <p>Kosten: Eén dag €49, beide dagen €79 (inclusief lunch en materialen)</p>
+      <address>RAI Amsterdam, Europaplein 24</address>
+      <p>&copy; DevOps Conference 2026 - Vragen? Mail naar info@devopsconference.nl</p>
+    </footer>
   </body>
 </html>
