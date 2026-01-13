@@ -4,7 +4,16 @@ body {
   background-color: rgb(254 80 0);
   color: #000000;
 }
-
+h1 {
+  font-family: Stella Aesta;
+  font-size: 80px;
+  margin: 0;
+}
+header p {
+  font-weight: bold;
+  font-size: 20px;
+  margin-top: 0;
+}
 fieldset {
   border: 2px solid #333;
   padding: 20px;
@@ -12,7 +21,10 @@ fieldset {
   max-width: 1200px;
   margin-bottom: 10px;
 }
-
+@font-face {
+  font-family: Stella Aesta;
+  src: url(/Stella\ Aesta\ Italic\ DEMO.otf);
+}
 legend {
   font-size: 24px;
   font-weight: bold;
@@ -45,7 +57,10 @@ input[type="submit"],
   cursor: pointer;
   font-weight: bold;
 }
-
+address {
+  font-family: Baskerville;
+}
 footer {
   font-family: Arial;
+  font-weight: bold;
 }
