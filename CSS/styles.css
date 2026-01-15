@@ -6,8 +6,11 @@ body {
 }
 h1 {
   font-family: Stella Aesta;
-  font-size: 80px;
+  font-size: clamp(2rem, 5vw, 80px);
   margin: 0;
+  line-height: 1.1;
+  word-break: break-word;
+  max-width: 100%;
 }
 header p {
   font-weight: bold;
@@ -63,4 +66,69 @@ address {
 footer {
   font-family: Arial;
   font-weight: bold;
+}
+/* Container Media Queries */
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+  h1 {
+    font-size: 70px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+  h1 {
+    font-size: 55px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+  header {
+    flex-direction: column;
+  }
+  h1 {
+    font-size: 45px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+  h1 {
+    font-size: 35px;
+  }
 }
